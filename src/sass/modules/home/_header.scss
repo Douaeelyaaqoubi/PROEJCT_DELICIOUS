@@ -1,0 +1,84 @@
+
+body{
+    padding: 2vw 8vw;
+    background-color: gray;
+
+    header{
+        background-color: transparent;
+            div:first-child{
+                justify-content: space-between;
+                display: flex;
+
+                div:first-child{
+                    gap: 25px;
+                    color: white;
+                    
+                    font-size: medium;
+                    font-weight: 600;
+                    i{
+                        color: $orange;
+                    }
+                }
+                .button{
+                        background-color: $orange;
+                        border-radius: 50px;
+                        border: none;
+                        padding: 0.5% 3%;
+                        color: white;
+                        letter-spacing: 1px;
+                        font-weight: 600;
+                }
+                .button:hover{
+                    background-color:$orenge_hover ;
+                }
+            }
+            div:last-child{
+                justify-content: space-between;
+                display: flex;
+                gap: 5vw;
+                .a{
+                    font-family: 'Pacifico', cursive;
+                    display: flex;
+                    justify-content: center;
+                    align-content: center;
+                    font-family: 'Satisfy', cursive;
+                    font-size: xx-large;
+                    color: rgb(255, 255, 255);
+                    font-weight: 600;
+                }
+                ul{
+                    gap: 20px;
+                }
+                
+                .nav-link {
+                    color: white !important; 
+                    font-size: medium;
+                    font-weight: 600;
+                    
+                }
+                .nav-item a:hover{
+                    color: $orange !important;
+                }
+            }
+}
+}
+
+
+
+
+
+// media
+@media (max-width:550px){
+    body{
+        header{
+            div:first-child{
+                p{
+                    display: none;
+                }
+            }
+            
+        }
+        
+
+    }
+}

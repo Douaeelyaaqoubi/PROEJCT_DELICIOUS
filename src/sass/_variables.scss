@@ -1,0 +1,12 @@
+@import "../../node_modules/bootstrap/scss/functions";
+@import "../../node_modules/bootstrap/scss/variables";
+
+
+
+// COLOR
+$orange :#ffbd3d;
+$orenge_hover:#ffbe3d95;
+$white :#ffffff;
+
+$color: ("orange":$orange ,"orenge_hover":$orenge_hover, "white":$white);
+$theme-colors: map-merge($color, $theme-colors);
