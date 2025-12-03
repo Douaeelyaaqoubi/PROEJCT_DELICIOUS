@@ -120,23 +120,201 @@ main{
     }
 
 // PAERT 3
+.part_3{
+    padding: 8vh 7vw;
 
-// .part_3_one{
-//     padding: ;
-//     p{
-//         color: $orange;
-//         border-radius: 50px;
-//         border: none;
-//         color: $orange;
-//         background-color: $bg_part2;
-//         padding: 10px 30px;
-//         display: inline;
-//         font-size: small;
-//         font-weight: bold;
-//     }
-// }
+.part_3_one{
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    flex-direction: column;
+
+    p{
+        color: $orange;
+        border-radius: 50px;
+        border: none;
+        color: $orange;
+        background-color: $bg_part2;
+        padding: 10px 30px;
+        display: inline;
+        font-size:medium;
+        font-weight: bold;
+    }
+    h1{
+        font-family: 'Satisfy';
+        font-weight: 700;
+        color: $ecreture;
+        span{
+            color: $orange;
+        }
+    }
+}
+.Part_3_two{
+
+    padding-top: 10vh;
+    display: flex;
+    gap: 2%;
+    align-items: center;
+    justify-content: center;
+    padding-bottom: 5%;
+    .zone{
+        padding: 2% 3%;
+        background-color: lighten($bg_part3, 5%);
+        p:first-child{
+            font-size: xx-large;
+            color: $orange;
+            font-weight: bold;
+        }
+        h1{
+            font-family: 'Satisfy';
+            font-weight: bold;
+            font-size: xx-large;
+            color: $ecreture;
+        }
+        p:last-child{
+            color: lighten($ecreture, 5%);
+            font-size: medium;
+            padding-top: 3%;
+        }
+    }
+
+    .zone:hover{
+        background-color: $orange;
+        h1{
+            color: white;
+        }
+        p{
+            color: white;
+        }
+    }
+    
+}
+
+// MENU 
+
+#menu {
+    
+    .section-title {
+        text-align: center;
+
+        h2 {
+        font-size: 32px;
+        font-weight: 700;
+        color: #5f5950;
+        }
+
+        p {
+        font-size: 24px;
+        span {
+            color: #cda45e;
+        }
+        }
+    }
+
+    input[type="radio"] {
+        display: none;
+}
 
 
+
+.menu-filters {
+        display:flex;
+        display: flex;
+        justify-content: center;
+        gap: 25px;
+        padding: 8vh;
+
+    li { 
+        display:flex; 
+    }
+    label {
+        cursor:pointer;
+        font-family: 'Satisfy';
+        font-weight:200;
+        font-size: medium;
+        color: $ecreture_srira;
+    }
+    label:hover {
+    color: $orange;
+}
+    
+}
+
+
+
+    
+    .menu-items {
+        display: grid;
+        grid-template-columns: repeat(2, 1fr);
+        gap: 6vh;    
+    }
+
+    
+    .menu-item {
+        display: flex;
+        align-items: center;
+        gap: 2vw;
+        img {
+        width: 100px;
+        height: 100px;
+
+        object-fit: cover;
+        border-radius: 50px;
+        border: 8px solid $bg_part3;
+        }
+
+        .item-info {
+        h4 {
+            font-size: 18px;
+            font-weight: 700;
+            color: #5f5950;
+            display: flex;
+            align-items: center;
+            justify-content: space-between;
+            width: 100%;
+
+            .point {
+            flex: 1;
+            margin: 0 10px;
+            color: #dadada;
+            font-size: 14px;
+            border-bottom: 1px dotted #ccc;
+            }
+
+            .price {
+            color: #cda45e;
+            font-weight: 700;
+            }
+        }
+
+        p {
+            margin: 0;
+            font-style: italic;
+            color: #777;
+            font-size: 14px;
+        }
+        }
+    }
+
+
+    #filter-all:checked ~ .menu-items .menu-item {
+        display: flex;
+    }
+
+    #filter-starters:checked ~ .menu-items .menu-item:not(.starters) {
+        display: none;
+    }
+
+    #filter-salads:checked ~ .menu-items .menu-item:not(.salads) {
+        display: none;
+    }
+
+    #filter-specialty:checked ~ .menu-items .menu-item:not(.specialty) {
+        display: none;
+    }
+    }
+
+}
 
 
 
@@ -178,6 +356,13 @@ main{
         }
         }
     }
+    // @media (max-width: 991px) {
+        // grid-template-columns: repeat(2, 1fr);
+        // }
+
+        // @media (max-width: 600px) {
+        // grid-template-columns: 1fr;
+        // }
     }
 
     /////////////////////////////////////////////////////////////
