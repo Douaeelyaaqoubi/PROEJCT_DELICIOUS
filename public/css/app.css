@@ -12135,9 +12135,9 @@ textarea.form-control-lg {
 header {
   padding: 10px 8vw 1px 8vw;
   position: fixed;
-  z-index: 999;
+  z-index: 997;
   width: 100vw;
-  background-color: rgba(33, 27, 23, 0.4549019608);
+  background-color: rgba(44, 39, 35, 0.6745098039);
 }
 header div:first-child {
   justify-content: space-between;
@@ -12261,23 +12261,83 @@ main .carousel-caption .button button:hover {
   background-color: rgb(255, 171.6494845361, 10);
 }
 
-@media (max-width: 450px) {
+.centent_image {
+  padding: 5% 7vw 150px 7vw;
+  display: flex;
+  justify-content: space-between;
+  background-color: #fffaf3;
+  height: 80vh;
+}
+
+.imgg {
+  width: 40vw;
+  height: 60vh;
+}
+
+.div_contant {
+  display: flex;
+  gap: 3%;
+  flex-direction: column;
+  justify-content: start;
+  width: 60vw;
+  color: #433f39;
+  padding-left: 2%;
+}
+
+.div_contant h1, .div_contant .h1 {
+  font-family: Arial, sans-serif;
+  color: #433f39;
+  font-size: 1.8vw;
+  font-weight: bolder;
+  font-family: "Satisfy", cursive;
+}
+
+.div_contant span p {
+  font-style: italic;
+  color: #8f8f8f;
+  font-size: 1.1vw;
+}
+
+.div_contant ul {
+  font-family: "Gill Sans", "Gill Sans MT", Calibri, "Trebuchet MS", sans-serif;
+  letter-spacing: 1px;
+  padding-left: 0;
+  list-style: none;
+  font-size: large;
+  font-size: 1.2vw;
+}
+
+.div_contant p {
+  color: var(--text-light);
+  font-family: "Gill Sans", "Gill Sans MT", Calibri, "Trebuchet MS", sans-serif;
+  font-size: large;
+  letter-spacing: 0, 5px;
+  font-size: 1.2vw;
+}
+
+.div_contant ul svg {
+  color: #ffbd3d;
+}
+
+@media (max-width: 770px) {
   main .carousel-caption {
     top: 35%;
     transform: translate(-50%, -35%);
   }
   main .carousel-caption h5, main .carousel-caption .h5 {
-    font-size: 2px;
+    font-size: 2vw;
     line-height: 28px;
-    transform: translate(0%, 200%);
-    padding-bottom: 0;
+    transform: translate(0%, 100%);
+    padding-bottom: 0px;
   }
   main .carousel-caption p {
+    padding-top: 20px;
     font-size: 17px !important;
     transform: translate(9%, 20%);
     text-align: justify;
     width: 40%;
     padding-bottom: 20px;
+    width: 80vw;
   }
   main .carousel-caption .button {
     flex-direction: column;

@@ -59,25 +59,108 @@ main{
 }
 }
 
-@media (max-width: 450px) {
+// PART_2
+
+    .centent_image {
+        padding: 5% 7vw 150px 7vw;
+        display: flex;
+        justify-content: space-between;
+        background-color: $bg_part2;
+        height: 80vh;
+    }
+    .imgg{
+        width: 40vw;
+        height: 60vh;
+    }
+    .div_contant {
+        
+        display: flex;
+        gap: 3%;
+        flex-direction: column;
+        justify-content: start;
+        width: 60vw;
+        color: $ecreture;
+        padding-left: 2%;
+    }
+
+    .div_contant h1 {
+        font-family: Arial, sans-serif;
+        color: $ecreture;
+        font-size: 1.8vw;
+        font-weight: bolder;
+        font-family: 'Satisfy', cursive;
+    }
+
+    .div_contant span p {
+        font-style: italic;
+        color: #8f8f8f;
+        font-size: 1.1vw;
+    }
+
+    .div_contant ul {
+        font-family: 'Gill Sans', 'Gill Sans MT', Calibri, 'Trebuchet MS', sans-serif;
+        letter-spacing: 1px;
+        padding-left: 0;
+        list-style: none;
+        font-size: large;
+        font-size: 1.2vw;
+    }
+
+    .div_contant p {
+        color: var(--text-light);
+        font-family: 'Gill Sans', 'Gill Sans MT', Calibri, 'Trebuchet MS', sans-serif;
+        font-size: large;
+        letter-spacing: 0, 5px;
+        font-size: 1.2vw;
+    }
+
+
+    .div_contant ul svg {
+        color: $orange;
+    }
+
+// PAERT 3
+
+// .part_3_one{
+//     padding: ;
+//     p{
+//         color: $orange;
+//         border-radius: 50px;
+//         border: none;
+//         color: $orange;
+//         background-color: $bg_part2;
+//         padding: 10px 30px;
+//         display: inline;
+//         font-size: small;
+//         font-weight: bold;
+//     }
+// }
+
+
+
+
+
+
+@media (max-width: 770px) {
     main {
         .carousel-caption {
         top: 35%;               
         transform: translate(-50%, -35%);
-
         h5 {
-            font-size: 2px;         
+            font-size: 2vw;         
             line-height: 28px;
-            transform: translate(0%, 200%);
-            padding-bottom: 0;
+            transform: translate(0%, 100%);
+            padding-bottom: 0px;
         }
 
         p {
+            padding-top: 20px;
             font-size: 17px !important;
             transform: translate(9%, 20%);
             text-align: justify;
             width: 40%;
             padding-bottom: 20px;
+            width: 80vw;
 
         }
 
@@ -96,4 +179,11 @@ main{
         }
     }
     }
+
+    /////////////////////////////////////////////////////////////
+    // PARTE 2
+    .centent_image{
+        
+    }
+
 

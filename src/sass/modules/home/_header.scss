@@ -1,17 +1,22 @@
 *{
     padding: 0;
     margin: 0;
+
 }
+
 
     header{
         padding: 10px 8vw 1px 8vw;
         position: fixed;
-        z-index: 999;
+        z-index: 997;
         width: 100vw;
         background-color: $header;
+        
+        
             div:first-child{
                 justify-content: space-between;
                 display: flex;
+                
 
                 div:first-child{
                     gap: 25px;
