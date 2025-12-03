@@ -1,10 +1,14 @@
-
-body{
-    padding: 2vw 8vw;
-    background-color: gray;
+*{
+    padding: 0;
+    margin: 0;
+}
 
     header{
-        background-color: transparent;
+        padding: 10px 8vw 1px 8vw;
+        position: fixed;
+        z-index: 999;
+        width: 100vw;
+        background-color: $header;
             div:first-child{
                 justify-content: space-between;
                 display: flex;
@@ -12,7 +16,6 @@ body{
                 div:first-child{
                     gap: 25px;
                     color: white;
-                    
                     font-size: medium;
                     font-weight: 600;
                     i{
@@ -37,7 +40,6 @@ body{
                 display: flex;
                 gap: 5vw;
                 .a{
-                    font-family: 'Pacifico', cursive;
                     display: flex;
                     justify-content: center;
                     align-content: center;
@@ -61,7 +63,11 @@ body{
                 }
             }
 }
-}
+
+
+
+
+
 
 
 
@@ -71,6 +77,7 @@ body{
 @media (max-width:550px){
     body{
         header{
+            padding: 10px 5vw 1px 5vw;
             div:first-child{
                 p{
                     display: none;
@@ -78,7 +85,20 @@ body{
             }
             
         }
+        main{
+        .carousel-caption h5 {
+            font-size: 30px; // smaller for mobile
+        }
+        .carousel-caption p {
+            font-size: 14px;
+            width: 90%;
+        }
+        .carousel-caption .button button {
+            padding: 8px 15px;
+            font-size: 14px;
+        }
+        }
+        }
         
 
-    }
 }

@@ -31,7 +31,7 @@
   --bs-gray-800: #343a40;
   --bs-gray-900: #212529;
   --bs-orange: #ffbd3d;
-  --bs-orenge_hover: rgba(255, 190, 61, 0.5843137255);
+  --bs-orenge_hover: rgba(255, 190, 61, 0.7568627451);
   --bs-white: #ffffff;
   --bs-primary: #0d6efd;
   --bs-secondary: #6c757d;
@@ -2994,19 +2994,19 @@ textarea.form-control-lg {
 
 .btn-orenge_hover {
   --bs-btn-color: #000;
-  --bs-btn-bg: rgba(255, 190, 61, 0.5843137255);
-  --bs-btn-border-color: rgba(255, 190, 61, 0.5843137255);
+  --bs-btn-bg: rgba(255, 190, 61, 0.7568627451);
+  --bs-btn-border-color: rgba(255, 190, 61, 0.7568627451);
   --bs-btn-hover-color: #000;
-  --bs-btn-hover-bg: rgba(255, 209.4676438053, 119.1034292035, 0.6466666667);
-  --bs-btn-hover-border-color: rgba(255, 203.7867215041, 102.1480611046, 0.6258823529);
-  --bs-btn-focus-shadow-rgb: 179, 133, 43;
+  --bs-btn-hover-bg: rgba(255, 204.6065689981, 104.5949905482, 0.7933333333);
+  --bs-btn-hover-border-color: rgba(255, 200.0316455696, 90.9406037001, 0.7811764706);
+  --bs-btn-focus-shadow-rgb: 198, 147, 47;
   --bs-btn-active-color: #000;
-  --bs-btn-active-bg: rgba(255, 214.5193312435, 134.1807732497, 0.6674509804);
-  --bs-btn-active-border-color: rgba(255, 203.7867215041, 102.1480611046, 0.6258823529);
+  --bs-btn-active-bg: rgba(255, 208.9210284665, 117.4719926538, 0.8054901961);
+  --bs-btn-active-border-color: rgba(255, 200.0316455696, 90.9406037001, 0.7811764706);
   --bs-btn-active-shadow: inset 0 3px 5px rgba(0, 0, 0, 0.125);
   --bs-btn-disabled-color: #000;
-  --bs-btn-disabled-bg: rgba(255, 190, 61, 0.5843137255);
-  --bs-btn-disabled-border-color: rgba(255, 190, 61, 0.5843137255);
+  --bs-btn-disabled-bg: rgba(255, 190, 61, 0.7568627451);
+  --bs-btn-disabled-border-color: rgba(255, 190, 61, 0.7568627451);
 }
 
 .btn-white {
@@ -3180,19 +3180,19 @@ textarea.form-control-lg {
 }
 
 .btn-outline-orenge_hover {
-  --bs-btn-color: rgba(255, 190, 61, 0.5843137255);
-  --bs-btn-border-color: rgba(255, 190, 61, 0.5843137255);
+  --bs-btn-color: rgba(255, 190, 61, 0.7568627451);
+  --bs-btn-border-color: rgba(255, 190, 61, 0.7568627451);
   --bs-btn-hover-color: #000;
-  --bs-btn-hover-bg: rgba(255, 190, 61, 0.5843137255);
-  --bs-btn-hover-border-color: rgba(255, 190, 61, 0.5843137255);
+  --bs-btn-hover-bg: rgba(255, 190, 61, 0.7568627451);
+  --bs-btn-hover-border-color: rgba(255, 190, 61, 0.7568627451);
   --bs-btn-focus-shadow-rgb: 255, 190, 61;
   --bs-btn-active-color: #000;
-  --bs-btn-active-bg: rgba(255, 190, 61, 0.5843137255);
-  --bs-btn-active-border-color: rgba(255, 190, 61, 0.5843137255);
+  --bs-btn-active-bg: rgba(255, 190, 61, 0.7568627451);
+  --bs-btn-active-border-color: rgba(255, 190, 61, 0.7568627451);
   --bs-btn-active-shadow: inset 0 3px 5px rgba(0, 0, 0, 0.125);
-  --bs-btn-disabled-color: rgba(255, 190, 61, 0.5843137255);
+  --bs-btn-disabled-color: rgba(255, 190, 61, 0.7568627451);
   --bs-btn-disabled-bg: transparent;
-  --bs-btn-disabled-border-color: rgba(255, 190, 61, 0.5843137255);
+  --bs-btn-disabled-border-color: rgba(255, 190, 61, 0.7568627451);
   --bs-gradient: none;
 }
 
@@ -6995,8 +6995,8 @@ textarea.form-control-lg {
   text-decoration-color: RGBA(var(--bs-orenge_hover-rgb), var(--bs-link-underline-opacity, 1)) !important;
 }
 .link-orenge_hover:hover, .link-orenge_hover:focus {
-  color: RGBA(255, 215, 134, var(--bs-link-opacity, 1)) !important;
-  text-decoration-color: RGBA(255, 215, 134, var(--bs-link-underline-opacity, 1)) !important;
+  color: RGBA(255, 209, 117, var(--bs-link-opacity, 1)) !important;
+  text-decoration-color: RGBA(255, 209, 117, var(--bs-link-underline-opacity, 1)) !important;
 }
 
 .link-white {
@@ -12127,27 +12127,32 @@ textarea.form-control-lg {
     display: none !important;
   }
 }
-body {
-  padding: 2vw 8vw;
-  background-color: gray;
+* {
+  padding: 0;
+  margin: 0;
 }
-body header {
-  background-color: transparent;
+
+header {
+  padding: 10px 8vw 1px 8vw;
+  position: fixed;
+  z-index: 999;
+  width: 100vw;
+  background-color: rgba(33, 27, 23, 0.4549019608);
 }
-body header div:first-child {
+header div:first-child {
   justify-content: space-between;
   display: flex;
 }
-body header div:first-child div:first-child {
+header div:first-child div:first-child {
   gap: 25px;
   color: white;
   font-size: medium;
   font-weight: 600;
 }
-body header div:first-child div:first-child i {
+header div:first-child div:first-child i {
   color: #ffbd3d;
 }
-body header div:first-child .button {
+header div:first-child .button {
   background-color: #ffbd3d;
   border-radius: 50px;
   border: none;
@@ -12156,16 +12161,15 @@ body header div:first-child .button {
   letter-spacing: 1px;
   font-weight: 600;
 }
-body header div:first-child .button:hover {
-  background-color: rgba(255, 190, 61, 0.5843137255);
+header div:first-child .button:hover {
+  background-color: rgba(255, 190, 61, 0.7568627451);
 }
-body header div:last-child {
+header div:last-child {
   justify-content: space-between;
   display: flex;
   gap: 5vw;
 }
-body header div:last-child .a {
-  font-family: "Pacifico", cursive;
+header div:last-child .a {
   display: flex;
   justify-content: center;
   align-content: center;
@@ -12174,21 +12178,116 @@ body header div:last-child .a {
   color: rgb(255, 255, 255);
   font-weight: 600;
 }
-body header div:last-child ul {
+header div:last-child ul {
   gap: 20px;
 }
-body header div:last-child .nav-link {
+header div:last-child .nav-link {
   color: white !important;
   font-size: medium;
   font-weight: 600;
 }
-body header div:last-child .nav-item a:hover {
+header div:last-child .nav-item a:hover {
   color: #ffbd3d !important;
 }
 
 @media (max-width: 550px) {
+  body header {
+    padding: 10px 5vw 1px 5vw;
+  }
   body header div:first-child p {
     display: none;
+  }
+  body main .carousel-caption h5, body main .carousel-caption .h5 {
+    font-size: 30px;
+  }
+  body main .carousel-caption p {
+    font-size: 14px;
+    width: 90%;
+  }
+  body main .carousel-caption .button button {
+    padding: 8px 15px;
+    font-size: 14px;
+  }
+}
+main .carousel-item {
+  position: relative;
+  height: 100vh;
+}
+main .carousel-item img {
+  height: 100%;
+  width: 100%;
+  object-fit: cover;
+}
+main .carousel-caption {
+  position: absolute;
+  top: 50%;
+  left: 50%;
+  transform: translate(-50%, -35%);
+  text-align: center;
+  width: 80%;
+  color: white;
+}
+main .carousel-caption h5, main .carousel-caption .h5 {
+  font-size: 55px;
+  font-family: "Satisfy", cursive;
+  font-weight: 600;
+}
+main .carousel-caption h5 span, main .carousel-caption .h5 span {
+  color: #ffbd3d;
+}
+main .carousel-caption p {
+  padding-top: 5%;
+  font-size: large;
+  width: 70%;
+  transform: translate(23%, -35%);
+  text-align: justify;
+}
+main .carousel-caption .button {
+  display: flex;
+  justify-content: center;
+  gap: 15px;
+}
+main .carousel-caption .button button {
+  background-color: transparent;
+  padding: 10px 40px;
+  font-size: 16px;
+  font-weight: 600;
+  border: solid 2px #ffbd3d;
+  color: white;
+  border-radius: 50px;
+  cursor: pointer;
+}
+main .carousel-caption .button button:hover {
+  background-color: rgb(255, 171.6494845361, 10);
+}
+
+@media (max-width: 450px) {
+  main .carousel-caption {
+    top: 35%;
+    transform: translate(-50%, -35%);
+  }
+  main .carousel-caption h5, main .carousel-caption .h5 {
+    font-size: 2px;
+    line-height: 28px;
+    transform: translate(0%, 200%);
+    padding-bottom: 0;
+  }
+  main .carousel-caption p {
+    font-size: 17px !important;
+    transform: translate(9%, 20%);
+    text-align: justify;
+    width: 40%;
+    padding-bottom: 20px;
+  }
+  main .carousel-caption .button {
+    flex-direction: column;
+    gap: 10px;
+  }
+  main .carousel-caption .button button {
+    width: 50%;
+    padding: 8px 0;
+    font-size: 14px;
+    transform: translate(10%, 100%);
   }
 }
 

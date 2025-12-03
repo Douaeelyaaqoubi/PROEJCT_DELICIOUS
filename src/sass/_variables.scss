@@ -5,8 +5,9 @@
 
 // COLOR
 $orange :#ffbd3d;
-$orenge_hover:#ffbe3d95;
+$orenge_hover:#ffbe3dc1;
 $white :#ffffff;
+$header: #211b1774;
 
 $color: ("orange":$orange ,"orenge_hover":$orenge_hover, "white":$white);
 $theme-colors: map-merge($color, $theme-colors);
