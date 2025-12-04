@@ -12319,10 +12319,8 @@ main .carousel-caption .button button:hover {
   color: #ffbd3d;
 }
 
-.part_3 {
-  padding: 8vh 7vw;
-}
 .part_3 .part_3_one {
+  padding: 8vh 7vw;
   display: flex;
   align-items: center;
   justify-content: center;
@@ -12348,6 +12346,7 @@ main .carousel-caption .button button:hover {
   color: #ffbd3d;
 }
 .part_3 .Part_3_two {
+  padding: 8vh 7vw;
   padding-top: 10vh;
   display: flex;
   gap: 2%;
@@ -12390,13 +12389,13 @@ main .carousel-caption .button button:hover {
 .part_3 #menu .section-title h2, .part_3 #menu .section-title .h2 {
   font-size: 32px;
   font-weight: 700;
-  color: #5f5950;
+  color: #433f39;
 }
 .part_3 #menu .section-title p {
   font-size: 24px;
 }
 .part_3 #menu .section-title p span {
-  color: #cda45e;
+  color: #ffbd3d;
 }
 .part_3 #menu input[type=radio] {
   display: none;
@@ -12441,7 +12440,7 @@ main .carousel-caption .button button:hover {
 .part_3 #menu .menu-item .item-info h4, .part_3 #menu .menu-item .item-info .h4 {
   font-size: 18px;
   font-weight: 700;
-  color: #5f5950;
+  color: #433f39;
   display: flex;
   align-items: center;
   justify-content: space-between;
@@ -12452,7 +12451,6 @@ main .carousel-caption .button button:hover {
   margin: 0 10px;
   color: #dadada;
   font-size: 14px;
-  border-bottom: 1px dotted #ccc;
 }
 .part_3 #menu .menu-item .item-info h4 .price, .part_3 #menu .menu-item .item-info .h4 .price {
   color: #cda45e;
@@ -12475,6 +12473,118 @@ main .carousel-caption .button button:hover {
 }
 .part_3 #menu #filter-specialty:checked ~ .menu-items .menu-item:not(.specialty) {
   display: none;
+}
+
+.special {
+  display: flex;
+}
+.special .list_txt {
+  display: flex;
+  justify-content: space-between;
+}
+.special .list_txt img {
+  width: 20%;
+}
+.special .list_txt .text_special {
+  color: #dadada;
+  width: 70%;
+}
+.special .list_txt .text_special h1, .special .list_txt .text_special .h1 {
+  font-family: "Satisfy", cursive;
+  font-weight: bold;
+  color: #433f39;
+  font-size: 1.5rem;
+  margin-bottom: 1rem;
+}
+.special .list_txt .text_special p {
+  font-size: 1vw;
+  color: #7c7c7c;
+}
+.special input[type=radio] {
+  display: none;
+}
+.special ul li {
+  margin-right: 10vw;
+  width: max-content;
+}
+.special ul li label {
+  cursor: pointer;
+  font-weight: 800;
+  color: #433f39;
+  padding: 1vw 1vw;
+}
+.special ul li label:active, .special ul li label:focus, .special ul li label:hover {
+  color: #ffbd3d;
+  padding-right: 7vw;
+  border-right: 3px solid #ffbd3d;
+}
+.special #filter-one:checked ~ .text_special .text_special {
+  display: flex;
+}
+.special #filter-starters:checked ~ .text_special .text_special:not(.two) {
+  display: none;
+}
+.special #filter-salads:checked ~ .text_special .text_special:not(.threy) {
+  display: none;
+}
+.special #filter-specialty:checked ~ .text_special .text_special:not(.fore) {
+  display: none;
+}
+
+.events {
+  position: relative;
+  padding: 80px 0;
+  background: #0c0b09;
+}
+.events .event-bg {
+  background: url("../../../../public/images/events-bg.jpg") center center;
+  background-size: cover;
+  position: absolute;
+  top: 0;
+  left: 0;
+  width: 100%;
+  height: 100%;
+  opacity: 0.2;
+}
+.events .carousel-content {
+  position: relative;
+  padding: 40px 0;
+  z-index: 2;
+}
+.events .carousel-content .content {
+  color: white;
+}
+.events .carousel-content .content h3, .events .carousel-content .content .h3 {
+  font-family: "Satisfy", cursive;
+  font-size: 38px;
+  font-weight: 600;
+}
+.events .carousel-content .content h4, .events .carousel-content .content .h4 {
+  width: fit-content;
+  border-bottom: solid 2px #ffbd3d;
+  font-size: 30px;
+  font-weight: 500;
+  margin-bottom: 20px;
+}
+.events .carousel-content .content ul {
+  padding: 0;
+  list-style: none;
+}
+.events .carousel-content .content ul li {
+  padding: 8px 0;
+}
+.events .carousel-content .content ul li i {
+  color: #ffbd3d;
+  margin-right: 8px;
+}
+.events .carousel-indicators {
+  bottom: -40px;
+}
+.events .carousel-indicators button {
+  width: 12px;
+  height: 12px;
+  background-color: #ffbd3d;
+  border-radius: 50%;
 }
 
 @media (max-width: 770px) {

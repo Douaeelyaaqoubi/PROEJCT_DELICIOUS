@@ -121,9 +121,10 @@ main{
 
 // PAERT 3
 .part_3{
-    padding: 8vh 7vw;
+    
 
 .part_3_one{
+    padding: 8vh 7vw;
     display: flex;
     align-items: center;
     justify-content: center;
@@ -150,7 +151,7 @@ main{
     }
 }
 .Part_3_two{
-
+padding: 8vh 7vw;
     padding-top: 10vh;
     display: flex;
     gap: 2%;
@@ -200,13 +201,13 @@ main{
         h2 {
         font-size: 32px;
         font-weight: 700;
-        color: #5f5950;
+        color: $ecreture;
         }
 
         p {
         font-size: 24px;
         span {
-            color: #cda45e;
+            color: $orange;
         }
         }
     }
@@ -267,7 +268,7 @@ main{
         h4 {
             font-size: 18px;
             font-weight: 700;
-            color: #5f5950;
+            color: $ecreture;
             display: flex;
             align-items: center;
             justify-content: space-between;
@@ -278,7 +279,7 @@ main{
             margin: 0 10px;
             color: #dadada;
             font-size: 14px;
-            border-bottom: 1px dotted #ccc;
+            
             }
 
             .price {
@@ -313,9 +314,137 @@ main{
         display: none;
     }
     }
-
+    
 }
 
+    // SPECIAL
+        .special{
+            display: flex;
+            .list_txt {
+                display: flex;
+                justify-content: space-between;
+                img{
+                width: 20%;
+                }
+                .text_special{
+                    color: #dadada;
+                    width: 70%;
+                    
+                h1 {
+                font-family: 'Satisfy', cursive;
+                font-weight: bold;
+                color: $ecreture;
+                font-size: 1.5rem;
+                margin-bottom: 1rem;
+                }
+                p {
+                    font-size: 1vw;
+                    color: $ecreture_srira;
+                }
+            }
+            }
+
+                input[type="radio"] {
+                display: none;
+        }
+
+            ul li {
+                
+                margin-right: 10vw;
+                width: max-content;
+                label{
+                    cursor: pointer;
+                    font-weight: 800;
+                    color: $ecreture;
+                    padding: 1vw 1vw;
+                    &:active, &:focus, &:hover{          
+                        color: $orange;
+                        padding-right: 7vw;
+                        border-right: 3px solid $orange;
+                    }
+                }
+            }
+            #filter-one:checked ~ .text_special .text_special {
+                display: flex;
+            }
+
+            #filter-starters:checked ~ .text_special .text_special:not(.two) {
+                display: none;
+            }
+
+            #filter-salads:checked ~ .text_special .text_special:not(.threy) {
+                display: none;
+            }
+
+            #filter-specialty:checked ~ .text_special .text_special:not(.fore) {
+                display: none;
+            }
+
+        }
+        // EVENET
+        .events {
+        position: relative;
+        padding: 80px 0;
+        background: $filter;
+
+        .event-bg {
+            background: url("../../../../public/images/events-bg.jpg") center center;
+            background-size: cover;
+            position: absolute;
+            top: 0; left: 0;
+            width: 100%;
+            height: 100%;
+            opacity: 0.2;
+        }
+
+        .carousel-content {
+            position: relative;
+            padding: 40px 0;
+            z-index: 2;
+
+            .content {
+            color: white;
+
+            h3 {
+                font-family: 'Satisfy', cursive;
+                font-size: 38px;
+                font-weight: 600;
+            }
+
+            h4 {
+                width: fit-content;
+                border-bottom: solid 2px $orange;
+                font-size: 30px;
+                font-weight: 500;
+                margin-bottom: 20px;
+            }
+
+            ul {
+                padding: 0;
+                list-style: none;
+
+                li {
+                padding: 8px 0;
+                i {
+                    color: $orange;
+                    margin-right: 8px;
+                }
+                }
+            }
+            }
+        }
+
+        .carousel-indicators {
+            bottom: -40px;
+
+            button {
+            width: 12px;
+            height: 12px;
+            background-color: $orange;
+            border-radius: 50%;
+            }
+        }
+        }
 
 
 
@@ -365,10 +494,5 @@ main{
         // }
     }
 
-    /////////////////////////////////////////////////////////////
-    // PARTE 2
-    .centent_image{
-        
-    }
-
+    
 
