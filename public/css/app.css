@@ -12656,6 +12656,19 @@ main .carousel-caption .button button:hover {
   background-color: #ffbd3d;
 }
 
+.grid {
+  display: grid;
+  grid-template-columns: repeat(4, 1fr);
+}
+.grid img {
+  width: 100%;
+  padding: 1px;
+}
+.grid img:hover {
+  transition: 0.3s;
+  transform: scale(1.08);
+}
+
 @media (max-width: 770px) {
   main .carousel-caption {
     top: 35%;
