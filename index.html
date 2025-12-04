@@ -389,7 +389,7 @@
             </section>
             <!-- //////////////////////// ALL SCSS ////////////////////////////// -->
             <!-- EVENTS -->
-            <section id="events" class="events">
+            <section id="events" class="events data-bs-ride="carousel"">
             <div class="container-fluid p-0">
 
                 <div id="deliciousEvents" class="carousel slide" data-bs-ride="carousel">
@@ -397,11 +397,11 @@
                 <div class="carousel-inner">
 
                     <!-- Slide 1 -->
-                    <div class="carousel-item active">
+                    <div class="carousel-item active" data-bs-interval="1000">
                     <div class="event-bg"></div>
                     <div class="carousel-content container">
                         <div class="row">
-                        <div class="col-lg-6">
+                        <div class="col-lg-6 "">
                             <img src="./public/images/events-slider/events-slider-1.jpg" class="img-fluid rounded">
                         </div>
                         <div class="col-lg-6 content">
@@ -420,11 +420,11 @@
                     </div>
 
                     <!-- Slide 2 -->
-                    <div class="carousel-item">
+                    <div class="carousel-item" data-bs-interval="2000"">
                     <div class="event-bg"></div>
                     <div class="carousel-content container">
                         <div class="row">
-                        <div class="col-lg-6">
+                        <div class="col-lg-6 ">
                             <img src="./public/images/events-slider/events-slider-2.jpg" class="img-fluid rounded">
                         </div>
                         <div class="col-lg-6 content">
@@ -477,12 +477,32 @@
                 </div>
             </div>
             </section>
+            <!-- BOOK A TABLE -->
+            <div class="ecrture">
+                <p>MENU</p>
+                <h1> 
+                    Check Our Tasty <span> &nbsp; Menu</span>
+                </h1>
+            </div>
+            <div class="d-flex justify-content-between reservation-section">
+            <div>
+                <img width="400px" src="./public/images/reservation.jpg" alt="">
+            </div>
 
+            <div class="reservation-form p">
+            <div class="d-flex flex-wrap gap-3 ">
+                <input type="text" placeholder="Your Name">
+                <input type="email" placeholder="Your Email">
+                <input type="text" placeholder="Your Phone">
+                <input type="date">
+                <input type="time">
+                <input type="number" placeholder="# of People">
+                <textarea placeholder="Message"></textarea>
+            </div>
+            <button class="book-btn">BOOK A TABLE</button>
+        </div>
+    </div>
 
-
-
-
-                
 
 
         <script src="./node_modules/bootstrap/dist/js/bootstrap.bundle.js"></script>
